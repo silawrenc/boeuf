@@ -1,0 +1,28 @@
+{
+  "name": "boeuf",
+  "version": "0.0.1",
+  "description": "Protocol buffers as node streams",
+  "main": "src/boeuf.js",
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silawrenc/boeuf.git"
+  },
+  "keywords": [
+    "protocol",
+    "buffers",
+    "pbf",
+    "stream",
+    "streaming"
+  ],
+  "author": "Simon Lawrence",
+  "license": "ISC",
+  "dependencies": {
+    "pbf": "^3.0.5"
+  },
+  "devDependencies": {
+    "tap": "^10.0.0"
+  }
+}

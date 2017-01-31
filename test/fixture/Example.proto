@@ -1,0 +1,9 @@
+message Example {
+	required string name = 1;
+	required bool flag = 2;
+	required float size = 3;
+}
+
+message Other {
+	string name = 1;
+}

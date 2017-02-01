@@ -2,11 +2,9 @@ const Pbf = require('pbf');
 const Transform = require('stream').Transform;
 
 class ProtocolBufferWriteStream extends Transform {
-  constructor(opts) {
-    opts.writableObjectMode = true;
-    super(opts);
-    this.compiler = opts.compiler;
-    this.frame = opts.frame
+  constructor(compiler) {
+    super({writableObjectMode: true});
+    this.compiler = compiler;
   }
 
   _transform(obj, enc, callback) {

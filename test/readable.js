@@ -12,16 +12,12 @@ tap.test('Instantiate readable from parser function', t => {
   t.end();
 });
 
-tap.test('Instantiate readable from options arg no message specified', t => {
-  let opts = {
-    schema: example.path,
-    foo: 'bar'
-  }
-  t.type(boeuf.readable(opts), 'ProtocolBufferReadStream');
+tap.test('Instantiate readable from schema path and message', t => {
+  t.type(boeuf.readable(example.path, 'Other'), 'ProtocolBufferReadStream');
   t.end();
 });
 
-tap.test('Test writable generates buffer from object with schema', t => {
+tap.test('Test readable generates object from buffer with schema', t => {
   let r = boeuf.readable(example.path);
   r.on('data', obj => {
     t.same(obj, example.message);
@@ -30,7 +26,7 @@ tap.test('Test writable generates buffer from object with schema', t => {
   r.write(example.buffer)
 });
 
-tap.test('Test writable generates buffer from object with function', t => {
+tap.test('Test readable generates object from buffer with function', t => {
   let r = boeuf.readable(example.parser);
   r.on('data', obj => {
     t.same(obj, example.message);

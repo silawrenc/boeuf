@@ -12,12 +12,8 @@ tap.test('Instantiate writable from parser function', (t) => {
   t.end();
 });
 
-tap.test('Instantiate writable from options arg no message specified', (t) => {
-  let opts = {
-    schema: example.path,
-    foo: 'bar'
-  }
-  t.type(boeuf.writable(opts), 'ProtocolBufferWriteStream');
+tap.test('Instantiate writable from schema path and message', (t) => {
+  t.type(boeuf.writable(example.path, 'Other'), 'ProtocolBufferWriteStream');
   t.end();
 });
 

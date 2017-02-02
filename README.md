@@ -1,5 +1,9 @@
 # Boeuf
 
+[![Master branch build status][ico-build]][travis]
+[![Published version][ico-package]][package]
+[![ISC Licensed][ico-license]][license]
+
 **Boeuf** is a node stream wrapper for protocol buffers. Under the hood it uses the [mapbox pbf](https://github.com/mapbox/pbf) library for parsing and compiling, so can be used with either `.proto` schemas or with custom read/write functions.
 
 ### Usage
@@ -83,3 +87,10 @@ Multiplexing can be used to send/receive different message formats over a single
 ```
 npm install boeuf
 ```
+
+[travis]: https://travis-ci.org/silawrenc/boeuf
+[package]: https://www.npmjs.com/package/boeuf
+[ico-build]: http://img.shields.io/travis/silawrenc/boeuf/master.svg
+[ico-license]: https://img.shields.io/github/license/silawrenc/boeuf.svg
+[ico-package]: https://img.shields.io/npm/v/boeuf.svg
+[license]: LICENSE

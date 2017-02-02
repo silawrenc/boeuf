@@ -18,7 +18,6 @@
     "streaming"
   ],
   "author": "Simon Lawrence",
-
   "license": "ISC",
   "dependencies": {
     "pbf": "^3.0.5"

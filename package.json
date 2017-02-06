@@ -1,6 +1,6 @@
 {
   "name": "boeuf",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Protocol buffers as node streams",
   "main": "src/boeuf.js",
   "scripts": {

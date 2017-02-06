@@ -20,7 +20,9 @@
   "author": "Simon Lawrence",
   "license": "ISC",
   "dependencies": {
-    "pbf": "^3.0.5"
+    "pbf": "^3.0.5",
+    "protocol-buffers-schema": "^3.1.1",
+    "varint": "^5.0.0"
   },
   "devDependencies": {
     "tap": "^10.0.0"
